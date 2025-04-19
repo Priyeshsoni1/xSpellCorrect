@@ -21,7 +21,7 @@ export const SpellCheck = () => {
       for (let i = 0; i < arr.length; i++) {
         const word = arr[i].toLowerCase();
         if (customDictionary[word]) {
-          setSuggestion(arr[i]);
+          setSuggestion(customDictionary[word]);
           break;
         }
         setSuggestion("");
